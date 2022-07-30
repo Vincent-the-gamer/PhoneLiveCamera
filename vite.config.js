@@ -5,5 +5,5 @@ export default defineConfig({
         host: '0.0.0.0',
         port: 8000
     },
-    base:'/guifeng-phone-cam/'
+    base:'/PhoneLiveCameraApp'
 });
