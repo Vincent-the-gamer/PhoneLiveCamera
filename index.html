@@ -1,12 +1,12 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="zh">
   <head>
     <meta charset="UTF-8" />
-    <link rel="icon" type="image/svg+xml" href="https://fav.farm/📷" />
+    <link rel="icon" href="/favicon.ico" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <meta
-      name="apple-mobile-web-app-title"
-      content="Use your phone as a webcam"
+      name="guifeng-phonecam"
+      content="把手机当作OBS摄像头"
     />
     <meta name="apple-mobile-web-app-capable" content="yes" />
     <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png" />
@@ -22,136 +22,123 @@
     />
 
     <!-- Primary Meta Tags -->
-    <title>Use your phone as a webcam, for free.</title>
-    <meta name="title" content="Use your phone as a webcam, for free." />
+    <title>把手机当作OBS摄像头</title>
+    <meta name="title" content="把手机当作OBS摄像头" />
     <meta
       name="description"
-      content="Use your mobile device as a high-definition webcam, for free, using OBS Virtual Camera."
+      content="把手机直接插到电脑上，然后在OBS里面添加视频捕捉设备源，选择手机就行"
     />
 
     <!-- Open Graph / Facebook -->
     <meta property="og:type" content="website" />
-    <meta property="og:url" content="https://phone-as-webcam.netlify.app/" />
-    <meta property="og:title" content="Use your phone as a webcam, for free." />
+    <meta property="og:url" content="https://guifeng-phonecam.gg/" />
+    <meta property="og:title" content="把手机当作OBS摄像头" />
     <meta
       property="og:description"
-      content="Use your mobile device as a high-definition webcam, for free, using OBS Virtual Camera."
+      content="把手机直接插到电脑上，然后在OBS里面添加视频捕捉设备源，选择手机就行"
     />
     <meta
       property="og:image"
-      content="https://phone-as-webcam.netlify.app/meta.png"
+      content="http://124.222.43.240:8000/meta.png"
     />
 
     <!-- Twitter -->
     <meta property="twitter:card" content="summary_large_image" />
     <meta
       property="twitter:url"
-      content="https://phone-as-webcam.netlify.app/"
+      content="http://124.222.43.240:8000"
     />
     <meta
       property="twitter:title"
-      content="Use your phone as a webcam, for free."
+      content="把手机当作OBS摄像头"
     />
     <meta
       property="twitter:description"
-      content="Use your mobile device as a high-definition webcam, for free, using OBS Virtual Camera."
+      content="把手机直接插到电脑上，然后在OBS里面添加视频捕捉设备源，选择手机就行"
     />
     <meta
       property="twitter:image"
-      content="https://phone-as-webcam.netlify.app/meta.png"
+      content="http://124.222.43.240:8000/meta.png"
     />
-
-    <script async data-api="/_hive" src="/bee.js"></script>
   </head>
   <body>
     <div>
       <header>
         <button class="back">
           <p>↑</p>
-          <p>Capture back</p>
+          <p>开启后置摄像头</p>
         </button>
         <button class="front">
           <p>↓</p>
-          <p>Capture front</p>
+          <p>开启前置摄像头</p>
         </button>
         <button class="fullscreen">
           <p>⬒</p>
-          <p>Enter full screen</p>
+          <p>进入全屏模式</p>
         </button>
       </header>
       <main>
         <video autoplay muted playsinline>
-          If you're seeing this, your browser probably doesn't support HTML
-          video. That also means you probably haven't updated your browser or
-          device in a few years, meaning you're an easy target for hacking.
-          Update now.
+         对不起，您的手机浏览器不支持HTML Video视频功能
         </video>
       </main>
 
+      <h3>强烈推荐使用chrome浏览器</h3>
+
+       <!--   显示版本号  -->
+      <script type="module">
+         import {version} from './package.json'
+         document.getElementById("version").innerText = `v${version}`;
+      </script>
+
       <footer>
-        <p>Created with 📷️ by <a href="http://didier.cz/g">Didier Catz</a></p>
+        <p class="info">
+          诡锋Fork ©2022  <br>
+          诡锋的B站： <a href="https://space.bilibili.com/3342738">-诡锋丿Lavafall-</a> <br>
+          诡锋的Github： <a href="https://github.com/Vincent-the-gamer">Vincent-the-gamer</a> <br/>
+          版本号： <span id="version"></span>
+        </p>
         <details>
-          <summary>How to use</summary>
+          <summary>如何使用</summary>
           <article>
-            <a href="https://didier.cz/g/phone-as-webcam">Source</a>
             <h1>
-              Use your smartphone camera as a webcam, via OBS Virtual Camera.
+             把手机直接当作OBS直播摄像头
             </h1>
             <ol>
               <li>
-                Open
-                <a href="https://phone-as-webcam.netlify.app/" rel="nofollow"
-                  >https://phone-as-webcam.netlify.app/</a
+                在您的手机上打开
+                <a href="http://124.222.43.240:8000" rel="nofollow"
+                  >http://124.222.43.240:8000</a
                 >
-                on your phone.
+                这个网址
               </li>
-              <li>Click "Capture Back" for the back-facing camera</li>
+              <li>点击"开启后置摄像头"按钮来打开摄像头</li>
               <li>
-                Click "Full screen" to make the video feed full-screen.
-                Optionally double tap on the video to completely fill the
-                screen.
+                 选择全屏，把手机横过来就好
               </li>
               <li>
-                Enable Airplane/silent mode on your phone to disable push
-                notifications
+                开启飞行模式或者禁用通知可以防止上隐（误）
               </li>
               <li>
-                Connect your phone to your computer using a charging cable. For
-                iPhones, this is a Lightning cable. For Androids, this is
-                usually a USB-C or Micro-USB cable.
-              </li>
-            </ol>
-            <h2>
-              Mirror your phone screen as a virtual camera on
-              Mac/Windows/Linux/Etc.
-            </h2>
-            <ol>
-              <li>
-                Download, install, and open
-                <a href="https://obsproject.com/" rel="nofollow">OBS Studio</a>
-              </li>
-              <li>
-                Set the right canvas resolution in OBS Studio settings by
-                clicking "Settings" and then "Video". "2436x1125" works well for
-                an iPhone 12 Pro.
-              </li>
-              <li>
-                Add "Video Capture Device" as a new source in OBS studio by
-                clicking + under sources. Use any name and select your phone as
-                a device
-              </li>
-              <li>Start Virtual Camera by clicking "Start Virtual Camera"</li>
-              <li>
-                Your phone screen should be mirrored in Zoom, Google Meet, or
-                others if you select "OBS Virtual Camera" as your camera.
+                把手机和电脑连起来，这样才可以用OBS找到源
               </li>
             </ol>
             <h4>
-              Main inspiration taken from
-              <a href="https://github.com/apancik/iphone-as-a-webcam"
-                >https://github.com/apancik/iphone-as-a-webcam</a
-              >.
+              最后，在OBS添加源："视频捕捉设备"，在里面选手机的名称那个选项就行
             </h4>
+            <hr>
+            <h3>补充部分</h3>
+            <ol>
+              <li>
+               下载OBS Studio: <br/>
+                官网，可能巨慢：<a href="https://obsproject.com/">OBS Studio官网</a> <br>
+                上Steam下载：<a href="https://store.steampowered.com/app/1905180/OBS_Studio/">Steam上的OBS Studio</a>
+                <br>
+              </li>
+              <li>
+               把OBS分辨率设置成 "2436x1125" 可以更好地兼容iPhone 12 Pro
+              </li>
+            </ol>
           </article>
         </details>
       </footer>

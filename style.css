@@ -10,6 +10,10 @@
   position: relative;
 }
 
+h3{
+  color: deeppink;
+}
+
 :root {
   --neutral: #e2e8f0;
   --light: #f1f5f9;
@@ -51,10 +55,18 @@ button {
   justify-items: start;
 }
 
+body{
+  background-color: black;
+}
+
 video {
   overflow: hidden;
   padding: 0;
   object-fit: contain;
+}
+
+details *{
+  color: deeppink;
 }
 
 button:hover {
@@ -64,6 +76,9 @@ button:hover {
 footer {
   color: var(--dark);
   text-align: center;
+}
+footer span{
+  color: deeppink;
 }
 
 a,
@@ -79,6 +94,10 @@ details {
   text-align: left;
 }
 
+details a:hover{
+  color: blue;
+}
+
 article {
   max-width: 66ch;
   display: grid;
@@ -89,4 +108,16 @@ article {
 p,
 li {
   line-height: 1.5;
+}
+
+p{
+  color: deeppink;
+}
+
+.info{
+  color: deeppink;
+}
+
+.info a:hover{
+  color: blue;
 }

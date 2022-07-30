@@ -1,12 +1,14 @@
 {
-  "name": "phone-as-webcam",
-  "version": "0.0.0",
+  "name": "phone-live-camera",
+  "version": "1.0.1",
   "scripts": {
-    "dev": "vite",
-    "build": "vite build && cp _redirects dist",
-    "serve": "vite preview"
+    "serve": "vite",
+    "build": "vite build && cp _redirects dist"
   },
   "devDependencies": {
     "vite": "^2.3.0"
+  },
+  "dependencies": {
+    "express": "^4.18.1"
   }
 }

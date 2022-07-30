@@ -8,7 +8,7 @@ const fullscreen = document.querySelector('.fullscreen');
 
 /**
  *
- * @param {MediaProvider} stream The video stream to render
+ * @param {MediaProvider} stream 要渲染的视频流
  */
 function render(stream) {
   video.srcObject = stream;
@@ -17,8 +17,8 @@ function render(stream) {
 /**
  * Gets the corresponding device camera based on a direction.
  *
- * @param {string} camera The device camera to use
- * @returns {ConstrainDOMString} The cross-platform camera `facingMode`
+ * @param {string} camera 设备的摄像头
+ * @returns {ConstrainDOMString} 获取摄像头的 facingMode
  */
 function getFacingMode(camera) {
   switch (camera) {
@@ -32,9 +32,9 @@ function getFacingMode(camera) {
 }
 
 /**
- * Captures output of a specified device camera.
+ * 捕捉摄像头功能
  *
- * @param {string} camera The device camera to use
+ * @param {string} camera 设备的摄像头
  */
 function capture(camera) {
   navigator.mediaDevices
@@ -46,7 +46,7 @@ function capture(camera) {
 }
 
 /**
- * Cross-platform way to make a video enter fullscreen.
+ * 视频全屏功能
  */
 function enterFullScreen() {
   if (video.webkitEnterFullScreen) {
